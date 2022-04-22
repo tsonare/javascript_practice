@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight Converstion Tool </title>
+  <link rel="stylesheet" type="text/css" href="tool.css">
+</head>
+<body>
+  <div id="container">
+   <h1>Weight Converstion Tool (Pounds to Kilogram)</h1><br>
+  <p>Enter Weight value in Pounds: </p>
+  <p>
+    <label >Pounds</label>
+    &nbsp;&nbsp;<input id="inputpounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+  </p>
+  <p>Your weight in Kilogram is: <span id="outputkilogram"></span></p>
+  </div>
+
+  <script src="tool.js"></script>
+  </body>
+</html>

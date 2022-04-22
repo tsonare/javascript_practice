@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="demo"> This is h1. </h1>
+  <h2 class="demo1"> This is h2. </h2>
+  <button onclick = "ChangeContent()" >Click Me</button>
+</body>
+<script>
+  const ChangeContent = () =>{
+    // document.getElementById('demo').innerHTML = "Welcome to student study portal"; // it will change the heading into the innerHtml line.
+
+    // console.log(document.getElementsByClassName('demo1')); // it returns on console
+    // console.log(document.getElementsByTagName('h2')); // element by tag name
+     // get element by Name also a method
+    //  document.querySelector('.demo1').innerHTML = "Welcome to student study portal"; // by  class query selector
+     document.querySelector('#demo').innerHTML = "Hello"; // by id query selector
+     // Note :- it only change the first class or id element to change all use the below method
+
+    document.querySelectorAll('.demo1').innerHTML = "Hello";
+  };
+</script>
+</html>

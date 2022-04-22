@@ -1,0 +1,16 @@
+body{
+  background-color: rgb(146, 146, 146);
+}
+#container{
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  margin-left: 350px;
+  margin-top: 150px;
+  padding-left: 50px;
+  padding-top: 30px;
+  /* text-decoration: underline; */
+}
+p{
+  font-size: 22px;
+}

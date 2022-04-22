@@ -156,9 +156,115 @@
 
 // Update march to March 
 
-const months = ['jan', 'feb', 'march', 'apr', 'march', 'jun'];
+// const months = ['jan', 'feb', 'march', 'apr', 'march', 'jun'];
 
 // const updatemonth = months.splice(2,1,"March"); // on 2 index we have to delete and update only one so 1.
 // console.log(months);
 
 // with second mehod index of 
+
+// const indexOfmonth = months.indexOf('march')
+// if(indexOfmonth != -1){
+//   const updatemonth = months.splice(indexOfmonth,1,"March");
+//   console.log(months);
+// }else{
+//   console.log("value not found");
+// }
+
+// deleting element at infinity
+
+// const months = ['jan', 'feb', 'march', 'apr', 'march', 'jun'];
+
+// const indexOfmonth = months.indexOf('march')
+// if(indexOfmonth != -1){
+//   const updatemonth = months.splice(indexOfmonth,Infinity); // deleting element
+//   console.log(months);
+// }else{
+//   console.log("value not found");
+// }
+
+
+// Map method in javascript
+// With map function we can use filter and reduce at the same time .
+// Returns new array containing the result of calling a function on every element in this array .
+
+// const arr = [1, 2, 3, 4, 5, 6]
+
+// let newarr = arr.map((curelement, index, array) =>{
+//     return curelement > 3;
+// });
+// console.log(arr);
+// console.log(newarr);
+
+// another method
+
+// let newArr = arr.map((currElement, index, array)=>{
+//     return (`Index number = ${index} and the value is = ${currElement} and this array belongs to = ${array}`)
+// });
+
+// console.log(newArr);
+
+// challange 
+// find the square root of the element 
+
+// let num = [1,2,3,4,5,6,7,8,9,10]
+
+// let numSquare = num.map((currElement)=>{
+//   return currElement*currElement
+// });
+
+// console.log(numSquare);
+
+// with the use Math.sqrt method 
+
+// let num = [4, 9, 16, 25, 36, 49, 64]; // it returns square root like 4=>2 and 9=>3
+
+// let numSquare = num.map((currElement)=>{
+//   return Math.sqrt(currElement);
+// });
+// console.log(numSquare);
+
+
+// q.2 multiply the number by 2 and print only the multipled number greater than 10.
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let multipledNum = num.map((currElement)=>{
+//   return currElement * 2;
+// }).filter((currEl)=> currEl>10);
+
+// console.log(multipledNum);
+
+// Reduce method 
+// to flattern the array 
+// reduce method is use to convert 3rd and 2d array into one dimensional array
+
+
+// The reduce method takes four argument 
+// 1. Accumulator // to store together
+// 2. Current value
+// 3. Current Index
+// 4. Source Array
+// example
+// let arr = [1, 2, 3, 4, 5, 10]
+
+// let sum = arr.reduce((accumulator, currentValue, currentIndex, sourceArray)=>{
+//   return accumulator + currentValue;
+// }, 7); // after (,) the value is intial value was also adding in the sum
+// console.log(sum);
+
+// how to flattern an array
+
+// const arr = [
+//     ['Zone_1', 'Zone_2'],
+//     ['Zone_3', 'Zone_4'],
+//     ['Zone_5', 'Zone_6'],
+//     ['Zone_7', 'Zone_8']
+// ];
+
+// let flatarr = arr.reduce((accumulator, currVal)=>{
+//   return accumulator.concat(currVal)
+// });
+// console.log(flatarr);
+
+
+
